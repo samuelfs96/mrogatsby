@@ -1,0 +1,9 @@
+{
+  results {
+    hits {
+      items {
+        id
+      }
+    }
+  }
+}

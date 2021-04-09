@@ -1,0 +1,9 @@
+html {
+}
+
+form label {
+  display: block;
+  float: left;
+  text-align: left;
+  width: 150px;
+}

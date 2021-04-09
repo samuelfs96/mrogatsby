@@ -1,0 +1,14 @@
+{
+  results(query: "Range", filters: [{id: "country", value: "Spain"}]) {
+    facets {
+      id
+      label
+      type
+      entries {
+        id
+        label
+        count
+      }
+    }
+  }
+}

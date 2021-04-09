@@ -1,0 +1,17 @@
+{
+  results {
+    hits {
+      items {
+        id
+        fields {
+          name
+          iata
+          city
+          country
+          icao
+          type
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,404 @@
+.burger {
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    left: 15px;
+    top: 24px;
+    display: none;
+}
+
+.burger span {
+    background: #106EB7;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    border-radius: 15px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.burger span:nth-child(1) {
+    top: 0;
+}
+
+.burger span:nth-child(2) {
+    top: 12px;
+}
+
+.burger span:nth-child(3) {
+    top: 24px;
+}
+
+.burger.active span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 12px;
+}
+
+.burger.active span:nth-child(2) {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.burger.active span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 12px;
+}
+
+nav .search-div .clicker-responsive{
+    display: none;
+}
+
+footer .activer{
+    width: 100%;
+    background-color: #106EB7;
+    height: 60px;
+    border-radius: 15px;
+    display: none;
+    cursor: pointer;
+}
+
+@media(max-width: 1199px){
+    .table-filters-container{
+        display: flex;
+        flex-flow: column;
+    }
+    .col.table-filters{
+        flex-flow: column;
+    }
+    .col.table-filters .col-auto{
+        padding: 0;
+    }
+}
+
+@media(max-width: 991px) {
+    nav .search-div .search-items .search-header{
+        top: -95px;
+    }
+
+    nav .search-div .search-items .search-header .ui.input{
+        margin-top: 0.5rem;
+    }
+
+    nav .search-div .params .search-content .row .col-lg-4{
+        margin-top: 0 !important;
+    }
+    
+    nav .search-div .clicker-responsive{
+        display: flex;
+        width: 57px;
+        height: 65px;
+    }
+    nav .search-div .clicker-responsive.displaySearch{
+        -webkit-transform: translateX(-430%);
+        -moz-transform: translateX(-430%);
+        -ms-transform: translateX(-430%);
+        -o-transform: translateX(-430%);
+        transform: translateX(-430%);
+    }
+    nav .search-div .clicker{
+        display: none;
+    }
+    nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: auto;
+        -webkit-transform: translateX(-145%);
+        -moz-transform: translateX(-145%);
+        -ms-transform: translateX(-145%);
+        -o-transform: translateX(-145%);
+        transform: translateX(-145%);
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+    nav.active {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+    nav .search-div{
+        margin: 0;
+        height: auto;
+    }
+    nav .search-div .clicker-responsive{
+        position: absolute;
+        top: 0px;
+        right: -57px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+    nav .search-div .search-items{
+        display: block;
+        margin-top: 6rem;
+    }
+    nav .search-div .params{
+        display: block;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        width: 287px;
+        padding-bottom: 2.5rem;
+    }
+    nav .search-div .el{
+        margin: auto;
+    }
+    nav .search-div .search_by{
+        margin-top: 1rem;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+    
+    footer .cardd{
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 !important;
+        position: absolute;
+        bottom: 0;
+        border-radius: 0;
+    }
+    .btn-settings span{
+        display: none;
+    }
+    .setting-right{
+        border-radius: 0;
+    }
+    .text{
+        width: 7rem;
+    }
+    
+    footer .activer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .activer img{
+        position: absolute;
+        position: absolute;
+        transform: translateY(30px);
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+
+    footer .activer img:nth-child(1){
+        top: -30px;
+    }
+    footer .activer img:nth-child(2){
+        top: -20px;
+    }
+    footer.translate-footer{
+        transform: translate(0, 45px);
+    }
+    
+    .popover{
+        left: 1rem !important;
+    }
+
+    .global-checks{
+        bottom: 0;
+    }
+
+    .global-checks a{
+        padding: 0.5rem 1rem;
+    }
+
+    nav .search-div .search_by{
+        justify-content: center;
+    }
+    .search-content{
+        text-align: center;
+    }
+
+    nav .search-div .params .search-content button{
+        margin-top: 0.5rem;
+        float: none;
+        text-align: center;
+        margin-left: 0 !important;
+        width: 100%;
+    }
+
+    nav .search-div .params .search-content .row{
+        margin-top: 1rem;
+    }
+
+    nav .search-div .params .search-content .row .col-lg-4 .ui{
+        margin-top: 0.75rem;
+    }
+
+    nav .search-div .params .distance{
+        margin-bottom: 0.75rem;
+    }
+    .col-lg-6{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+@media(max-width: 800px) {
+    .title{
+        font-size: 1rem;
+    }
+    .subtitle{
+        font-size: 0.75rem;
+    }
+    header .container {
+        justify-content: space-evenly;
+        margin-left: 2rem;
+        margin-top: 1.25rem;
+    }
+
+}
+
+@media(max-width: 767px) {
+    footer .cardd div .btn-primary{
+        padding: 0.35rem 0.5rem;
+        font-size: 0.75rem;
+    }
+    .my-list .list-item .row .col-md-6{
+        width: 50%;
+    }
+}
+
+@media(max-width: 675px) {
+    footer .cardd div:not(.backg){
+        margin: 0 0.7rem;
+    }
+    header .logo img{
+        width: 65%;
+    }
+}
+
+@media(max-width: 600px) {
+    .subtitle {
+        font-size: 0.7rem;
+    }
+    footer .cardd div:not(.backg){
+        margin: 0 0.5rem;
+    }
+    .setting-right{
+        padding: 0;
+    }
+    .my-list{
+        width: 350px;
+    }
+    .my-list .list-item .list-title{
+        font-size: 0.7rem;
+        margin-bottom: 0.3rem;
+      }
+    
+      .my-list .list-item .list-subtitle{
+        font-size: 0.6rem;
+        margin-bottom: 0.3rem;
+      }
+
+      .my-list .list-item span{
+        font-size: 0.6rem;  
+      }
+    
+      .my-list .list-item .list-mini-title{
+        font-size: 0.6rem;
+        margin-bottom: 0.3rem;
+      }
+    
+      .my-list .list-item ul{
+        padding-left: 1.5rem;
+        margin-top: 0;
+      }
+    
+      .my-list .list-item ul li{
+        color: #585858;
+        font-size: 0.55rem; 
+      }
+
+      .my-list .list-item .btn-primary{
+        font-size: 0.55rem;
+        padding: 0.3rem 0.5rem;
+      }
+
+}
+
+@media(max-width: 500px) {
+    .main a:nth-child(1){
+        bottom: 20rem;
+        right: 65%;
+    }
+    .main a:nth-child(2){
+        bottom: 15rem;
+        right: 90%;
+    }
+    .main a:nth-child(3){
+        bottom: 13rem;
+        right: 65%;
+    }
+    .popover{
+        left: 1rem !important;
+    }
+}
+
+@media(max-width: 460px) {
+    .subtitle {
+        font-size: 0.6rem;
+    }
+    footer .cardd div:not(.backg){
+        margin: 0 0.4rem;
+    }
+    header .container {
+        margin-left: 3rem;
+    }
+    .list{
+        margin: 0;
+    }
+    .my-list{
+        width: 300px;
+    }
+}
+
+@media(max-width: 400px) {
+    .subtitle {
+        font-size: 0.5rem;
+    }
+    footer .cardd div:not(.backg){
+        margin: 0 0.3rem;
+    }
+    .my-list{
+        width: 275px;
+    }
+    nav .search-div .params{
+        width: 275px;
+    }
+    .global-checks a{
+        padding: .6rem;
+    }
+    nav .search-div .search_by{
+        justify-content: center;
+    }
+}
+
+

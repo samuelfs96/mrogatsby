@@ -1,0 +1,32 @@
+FROM registry.forloop.dyndns.org/library/node:12.18.3
+# FROM registry.forloop.dyndns.org/library/node:14.15.3 # TODO: Upgrade
+
+RUN mkdir -p /prereq
+WORKDIR /prereq
+
+ADD cache/AUTH.sh ./
+ADD cache/binary.sh ./
+
+# ADD cache/inject_apt.sh ./
+# RUN ./inject_apt.sh
+
+RUN apt-get update
+RUN apt-get install -y python-yaml mc
+
+ADD cache/inject_npm.sh ./
+RUN ./inject_npm.sh
+
+RUN apt-get update
+
+RUN apt-get install -y python-yaml
+
+RUN yarn global add gatsby-cli surge nodemon
+
+ADD package.json .
+
+ADD yarn.lock .
+
+RUN yarn install
+
+
+

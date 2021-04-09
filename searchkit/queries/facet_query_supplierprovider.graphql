@@ -1,0 +1,41 @@
+{
+  results {
+    hits {
+      items {
+        id
+        fields {
+          uid
+          name
+          address
+          latitude
+          longitude
+          note
+          capability_type
+          engine_type
+          ac_type
+          contacts {
+            number
+            department
+            person
+            email
+          }
+          full_capabilities{
+            capability_type
+            engine_type
+            ac_type
+          }
+        }
+      }
+    }
+    facets {
+      id
+      label
+      type
+      entries {
+        id
+        label
+        count
+      }
+    }
+  }
+}

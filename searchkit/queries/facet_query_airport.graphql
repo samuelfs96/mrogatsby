@@ -1,0 +1,14 @@
+{
+  results(query: "Melb") {
+    facets {
+      id
+      label
+      type
+      entries {
+        id
+        label
+        count
+      }
+    }
+  }
+}

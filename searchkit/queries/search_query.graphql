@@ -1,0 +1,12 @@
+{
+  results(query: "Apple") {
+    hits {
+      items {
+        id
+        fields {
+          name
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+FROM platform_front_ui:prereq
+
+WORKDIR /app
+
+ENV INTERNAL_STATUS_PORT 8002
+
+RUN gatsby telemetry --disable
+
+CMD ln -s /prereq/node_modules ./ & gatsby develop --host=0.0.0.0 --port 8001
